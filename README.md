@@ -1,12 +1,14 @@
 Docker python flask microcontainer
 ===================================
 
-.. code-block::
+Build the container with the smallest python image out there.
+
     % docker build . -t flask-app
     % docker images
     % docker run -d -p 5000:5000 flask-app
     % docker ps -a
 
+Cheched some images for final size after build and using frolvlad/alpine-python2.
 
     # % docker build . -t $REPO
     # REPOSITORY                TAG         IMAGE ID         SIZE
@@ -15,3 +17,5 @@ Docker python flask microcontainer
     # python                    2.7-alpine  c8779bc5246f     75.4MB
 
     # --squash has no effect so far
+
+If you know a python image with smaller footprint - please let me know. Thanks.
