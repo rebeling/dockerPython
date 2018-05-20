@@ -8,7 +8,7 @@ Build the container with the smallest python image out there.
     % docker run -d -p 5000:5000 flask-app
     % docker ps -a
 
-Cheched some images for final size after build and using frolvlad/alpine-python2.
+Checked some images for final size after build and using frolvlad/alpine-python2.
 
     # % docker build . -t $REPO
     # REPOSITORY                TAG         IMAGE ID         SIZE
